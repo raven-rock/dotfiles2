@@ -1,0 +1,22 @@
+# -*- mode: snippet -*-
+#name : fooo
+#key : fooo
+#contributor : Gillette
+# --
+
+#+begin_src sh
+    mysqlfcfinancero <<EOF
+
+    select
+      x
+      , md5(x)
+      , substring(md5(x),1,16)
+      , cast(conv(substring(md5(x),1,16),16,10) as unsigned)
+    from
+      (
+        select 'abc' as x
+      ) core
+    ;
+
+    EOF
+#+end_src

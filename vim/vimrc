@@ -1,0 +1,34 @@
+colorscheme slate
+filetype plugin indent on " This does though, including ruby.
+syntax on               " turn on syntax hilighting
+set hidden              " allow hidden buffers, i.e. unsaved buffers in background
+" set mouse +=a           " enable mouse support in terminal -> http://stackoverflow.com/questions/2149456/reasons-for-using-command-line-vim-versus-gui-vim
+" set clipboard=unnamedplus
+set clipboard=unnamed   " enable yanks to go to OS clipboard.
+set nu                  " line numbers on
+set ignorecase          " ignore case in searches
+set smartcase           " ignore case if search pattern is all lowercase, case-sensitive otherwise
+set nocompatible        " vim only
+set tabstop=4           " tab width
+set shiftwidth=4        "
+set softtabstop=4       "
+set expandtab           " tabs are spaces instead of tabs
+set ruler               " line, column display always on
+set hlsearch            " hilight last search pattern
+set cursorline          " cursor line easy to see
+set autoindent          " always set autoindenting on
+set incsearch           " show search matches as you type
+set laststatus=2        " always show status line
+set linebreak           " [Levi] cause long lines to wrap by words instead of just chars. http://stackoverflow.com/questions/13294489/make-vim-only-do-a-soft-word-wrap-not-hard-word-wrap
+
+set backupdir=~/.vim/.backup//
+set directory=~/.vim/.swp//
+
+nnoremap Y y$
+
+call plug#begin('~/.vim/plugged')
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
+"Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+"Plug 'junegunn/fzf.vim'
+call plug#end()

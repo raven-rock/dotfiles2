@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+#name : gitconfig-amazon
+#key : gcau
+#contributor : lgillett@amazon.com
+# --
+
+[user]
+  name = Levi Gillette
+  email = lgillett@amazon.com

@@ -1,0 +1,4 @@
+.backup/
+.#.gitignore
+plugged
+.swp

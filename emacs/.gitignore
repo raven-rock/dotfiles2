@@ -1,0 +1,41 @@
+/.git
+
+/amazon-specific.el
+
+# Emacs
+*~
+*.elc
+
+# files
+/bookmarks
+/ac-comphist.dat
+/auto-save-list
+/custom.el
+/history
+/.mc-lists.el
+/places
+/recentf
+/smex-items
+/tramp
+/nohup.out
+/\.#*
+*.swp
+/session.*
+/ido.last
+/server
+/.org-id-locations
+/ivy-youtube-history
+/projectile-bookmarks.eld
+
+# dirs
+/elpa/
+/elpa
+/eshell/
+/site-lisp/
+/url/
+/.sx/
+/emojis
+/transient/
+
+# host-specific configs go here
+/host-lisp/

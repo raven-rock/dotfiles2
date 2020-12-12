@@ -1,0 +1,11 @@
+** Install script
+
+#+BEGIN_SRC sh
+    set -ex
+    cd ~/repos
+    git clone https://github.com/raven-rock/emacs-v4.git
+    cd
+    [[ -d .emacs.d ]] && mv .emacs.d .emacs.d.$(date +"%Y%m%d").bak
+    ln -s repos/emacs-v4 .emacs.d
+    emacs --daemon # do this if you wanna kick off downloading packages
+#+END_SRC
